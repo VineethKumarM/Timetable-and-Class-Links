@@ -1,4 +1,4 @@
-prompt("HEllo")
+// prompt("HEllo")
 const form = document.querySelector('form');
 const list = document.querySelector('#list');
 

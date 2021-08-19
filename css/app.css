@@ -2,3 +2,16 @@ img{
     width: 1100px;
     height: 600px;
 }
+
+form {
+    margin-top: 10px;
+}
+.row:nth-of-type(even) {
+    color: #f7f7f7;
+    background-color: #292b2c;
+}
+
+a{
+    /* text-decoration: none; */
+    color: #5bc0de;
+}
