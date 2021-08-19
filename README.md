@@ -4,4 +4,5 @@ A basic Webpage which has the Schedule and Links for the Classes
 
 Few Classes don't have fixed links, so some links are not valid.
 Assignment section is still in progress! :/
+<hr>
 Suggestions are welcome. 
