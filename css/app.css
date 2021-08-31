@@ -10,15 +10,28 @@ form {
     color: #f7f7f7;
     background-color: #292b2c;
 }
+.row:nth-of-type(odd) {
+    border-left: #292b2c 3px solid;
+    border-right: #292b2c 3px solid;    
+}
 
 a{
     /* text-decoration: none; */
     color: #5bc0de;
 }
 
-/* #notif:hover {
-    content: "Assignments section is still in development";
-} */
+section{
+    margin: 5px;
+}
+
+#heading {
+   border-left: #292b2c 3px solid;
+   border-top: #292b2c 3px solid;
+   border-right: #292b2c 3px solid;
+
+}
+
+
 
 @media all and (min-width: 992px) {
 	/* .navbar .dropdown-menu-end{ right:0; left: auto;  } */

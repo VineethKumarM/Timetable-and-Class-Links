@@ -11,12 +11,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/4d1deaf6a2.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body >
 
-    <div class="container">
-        <h1>Timetable and Class links</h1>
+    <div class="container" >
+        <h1 class="">Timetable and Class links</h1>
 
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark" ><!--style="margin-bottom: 10px;"-->
             <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,26 +63,27 @@
             </div>
         </nav>
 
-        <div class="container-fluid">
-            <div class="row row-cols-4 heading">
+
+        <div class="container-fluid" style="text-align: center;">
+            <div class="row heading" id="heading">
                 <div class="col"> <b>SUBJECT</b></div>
                 <div class="col-2"><b>CODE</b></div>
                 <div class="col"> <b>FACULTY</b> </div>
                 <div class="col-2"><b>CLASS LINKS</b></div>
             </div>
-            <div class="row row-cols-4">
+            <div class="row ">
                 <div class="col">Object Oriented Methodologies</div>
                 <div class="col-2"><a href="https://classroom.google.com/u/0/c/MzcxNzgxNDUxOTY1" target="_blank"> OOM</a></div>
                 <div class="col">O.P.Vyas</div>
                 <div class="col-2"><a href="https://iiita.webex.com/iiita/j.php?MTID=mfa5df8bfbe48d4fd53a22ad35bdac8f7" target="_blank">link</a> :oom123</div>
             </div>
-            <div class="row row-cols-4">
+            <div class="row ">
                 <div class="col">Theory of Computation</div>
                 <div class="col-2"><a href="https://classroom.google.com/u/0/c/MzcyMjQ5MjgxOTkw" target="_blank">TOC</a></div>
                 <div class="col">Navjot Singh</div>
                 <div class="col-2"><a href="https://iiita.webex.com/iiita/j.php?MTID=m09696073470ad53a9bc166f7344fc70d" target="_blank">link</a></div>
             </div>
-            <div class="row row-cols-4">
+            <div class="row ">
                 <div class="col">Opearting System</div>
                 <div class="col-2"><a href="https://classroom.google.com/u/0/c/MzcyNTYxMTY3ODk3" target="_blank">OS</a></div>
                 <div class="col"> Bibhal Ghoshal<a href="https://profile.iiita.ac.in/bibhas.ghoshal/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
@@ -93,7 +94,7 @@
                 <!-- <a href="https://meet.google.com/rdh-yjid-ivx" target="_blank">gc link</a> -->
                 </div>
             </div>
-            <div class="row row-cols-4">
+            <div class="row ">
                 <div class="col">Probability and Statistics</div>
                 <div class="col-2"><a href="https://classroom.google.com/u/0/c/MzcyMTM0MTY4NTUz" target="_blank">PAS</a></div>
                 <div class="col">Savitri Joshi <a href="https://profile.iiita.ac.in/savitri.joshi/Teaching.php" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
@@ -102,19 +103,19 @@
                   </svg></a></div>
                 <div class="col-2">LINK</div>
             </div>
-            <div class="row row-cols-4">
+            <div class="row ">
                 <div class="col">Intro to Marketing</div>
                 <div class="col-2"><a href="https://classroom.google.com/" target="_blank">IM</a></div>
                 <div class="col">Saurabh Mishra</div>
                 <div class="col-2"><a href="https://iiita.webex.com/meet/saurabhmishra" target="_blank">link</a></div>
             </div>
-            <div class="row row-cols-4">
+            <div class="row ">
                 <div class="col">Intro to Finance</div>
                 <div class="col-2"><a href="https://classroom.google.com/u/0/c/Mzc2Njk0NDUxODg1" target="_blank">IF</a></div>
                 <div class="col">Ranjit Singh</div>
                 <div class="col-2"><a href="https://meet.google.com/lookup/gbmgkmaunm?authuser=0&hs=179" target="_blank">link</a></div>
             </div>
-            <div class="row row-cols-4">
+            <div class="row ">
                 <div class="col">Python Programming</div>
                 <div class="col-2"><a href="https://classroom.google.com/" target="_blank">PTP</a></div>
                 <div class="col">Padmakar Pandey</div>
@@ -123,19 +124,35 @@
         </div>
 
         <form >
-            <label for="Aname">Assignment</label>
-            <input type="text" id="Aname" name="Aname">
-            <label for="sbj">Subject</label>
-            <input type="text" id="sbj" name="sbj">
-            <label for="date">DUE Date: </label>
-            <input type="date" id="date" name="dateyt">
+            <section>
+                <label for="Aname">Assignment: </label>
+                <input type="text" id="Aname" name="Aname"> <br>
+            </section>
+            <section>
+                <label for="sbj">Subject:    </label>
+                <input type="text" id="sbj" name="sbj"><br>
+            </section>
+            <section>
+                <label for="date">DUE Date: </label>
+                <input type="date" id="date" name="dateyt"><br>
+            </section>
+            
             <button>ADD</button>
         </form>
-        <p id="notif">The Assignments due are: </p>
-        <ul id="list"></ul>
+
+        
+
+        <div class="container">
+            <p id="notif">The Assignments due are: </p>
+            <ul id="list"></ul>
+        </div>
+        
+
         <img src="image/Timetable1.jpg" alt="timetable" class="img-fluid">
+
+
     </div>
-    <script src="js/app.js"></script>
+
 
     <footer>
         <div class="container" style="text-align: center;">
@@ -144,6 +161,9 @@
         </div>
 
     </footer>
+
+    <script src="js/app.js"></script>
+
 </body>
 </html>
 
