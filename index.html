@@ -1,173 +1,366 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/4d1deaf6a2.js" crossorigin="anonymous"></script>
-</head>
-<body >
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Schedule</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/4d1deaf6a2.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="">Timetable and Class links</h1>
 
-    <div class="container" >
-        <h1 class="">Timetable and Class links</h1>
+			<nav
+				id="navbar"
+				class="navbar navbar-expand-lg navbar-dark bg-dark"
+			>
+				<!--style="margin-bottom: 10px;"-->
+				<div class="container-fluid">
+					<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+					<button
+						class="navbar-toggler bg-dark"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon navbar-inverse"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="/"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									href="https://mail.google.com/"
+									target="_blank"
+									>GMail</a
+								>
+							</li>
+							<li class="nav-item dropdown">
+								<!-- <a class="nav-link" aria-current="page" href="https://drive.google.com/drive/folders/13umPdDvlwj4RpqPulvRj8W9S783frP2F" target="_blank">GDrive</a> -->
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									><!--role="button"-->
+									Links</a
+								>
+								<ul class="dropdown-menu fade-up">
+									<li>
+										<a
+											class="dropdown-item"
+											target="_blank"
+											href="https://drive.google.com/drive/u/0/folders/13umPdDvlwj4RpqPulvRj8W9S783frP2F"
+										>
+											Recordings</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											target="_blank"
+											href="https://drive.google.com/drive/folders/1ZALPZ8ULidG2cGp9QL0qg8TEbwZkecly"
+										>
+											Class Notes
+										</a>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											target="_blank"
+											href="https://drive.google.com/drive/folders/1ZFshwzW5KFMEEgyPRkqT-83OyAGIeChv"
+										>
+											Seniors Notes</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="https://classroom.google.com/h"
+									target="_blank"
+									>Classroom</a
+								>
+							</li>
 
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark" ><!--style="margin-bottom: 10px;"-->
-            <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon navbar-inverse"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://mail.google.com/" target="_blank">GMail</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <!-- <a class="nav-link" aria-current="page" href="https://drive.google.com/drive/folders/13umPdDvlwj4RpqPulvRj8W9S783frP2F" target="_blank">GDrive</a> -->
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false"><!--role="button"-->
-                    Links</a>
-                    <ul class="dropdown-menu fade-up">
-                       <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/u/0/folders/13umPdDvlwj4RpqPulvRj8W9S783frP2F"> Recordings</a></li>
-                        <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/folders/1ZALPZ8ULidG2cGp9QL0qg8TEbwZkecly"> Class Notes </a></li>
-                        <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/folders/1ZFshwzW5KFMEEgyPRkqT-83OyAGIeChv"> Seniors Notes</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="https://classroom.google.com/h" target="_blank">Classroom</a>
-                </li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									><!--role="button"-->
+									Activities
+								</a>
+								<ul
+									class="dropdown-menu fade-up"
+									aria-labelledby="navbarDropdown"
+								>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://drive.google.com/drive"
+											target="_blank"
+											>GDrive Home</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://aviral.iiita.ac.in/login"
+											target="_blank"
+											>Aviral</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://erp.iiita.ac.in/"
+											target="_blank"
+											>Erp</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="https://vineethkumarm.github.io/Timetable-and-Class-Links/"
+									target="_blank"
+									>Github</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false"><!--role="button"-->
-                      Activities
-                    </a>
-                    <ul class="dropdown-menu fade-up" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="https://drive.google.com/drive" target="_blank">GDrive Home</a></li>
-                      <li><a class="dropdown-item" href="https://aviral.iiita.ac.in/login" target="_blank">Aviral</a></li>
-                      <li><a class="dropdown-item" href="https://erp.iiita.ac.in/" target="_blank">Erp</a></li>
-                      
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="https://vineethkumarm.github.io/Timetable-and-Class-Links/" target="_blank">Github</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
+			<div class="container-fluid" style="text-align: center">
+				<div class="row heading" id="heading">
+					<div class="col"><b>SUBJECT</b></div>
+					<div class="col-2"><b>CODE</b></div>
+					<div class="col"><b>FACULTY</b></div>
+					<div class="col-2"><b>CLASS LINKS</b></div>
+				</div>
+				<div class="row">
+					<div class="col">Object Oriented Methodologies</div>
+					<div class="col-2">
+						<a
+							href="https://classroom.google.com/u/0/c/MzcxNzgxNDUxOTY1"
+							target="_blank"
+						>
+							OOM</a
+						>
+					</div>
+					<div class="col">O.P.Vyas</div>
+					<div class="col-2">
+						<a
+							href="https://iiita.webex.com/iiita/j.php?MTID=mfa5df8bfbe48d4fd53a22ad35bdac8f7"
+							target="_blank"
+							>link</a
+						>
+						:oom123
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">Theory of Computation</div>
+					<div class="col-2">
+						<a
+							href="https://classroom.google.com/u/0/c/MzcyMjQ5MjgxOTkw"
+							target="_blank"
+							>TOC</a
+						>
+					</div>
+					<div class="col">Navjot Singh</div>
+					<div class="col-2">
+						<a
+							href="https://iiita.webex.com/iiita/j.php?MTID=m09696073470ad53a9bc166f7344fc70d"
+							target="_blank"
+							>link</a
+						>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">Opearting System</div>
+					<div class="col-2">
+						<a
+							href="https://classroom.google.com/u/0/c/MzcyNTYxMTY3ODk3"
+							target="_blank"
+							>OS</a
+						>
+					</div>
+					<div class="col">
+						Bibhal Ghoshal<a
+							href="https://profile.iiita.ac.in/bibhas.ghoshal/"
+							target="_blank"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-link"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+								/>
+								<path
+									d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"
+								/></svg
+						></a>
+					</div>
+					<div class="col-2">
+						<a
+							href="https://iiita.webex.com/iiita/j.php?MTID=m30c097cd1ec5a9e43391e11caf71b949"
+							target="_blank"
+							>link</a
+						>
+						<!-- <a href="https://meet.google.com/rdh-yjid-ivx" target="_blank">gc link</a> -->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">Probability and Statistics</div>
+					<div class="col-2">
+						<a
+							href="https://classroom.google.com/u/0/c/MzcyMTM0MTY4NTUz"
+							target="_blank"
+							>PAS</a
+						>
+					</div>
+					<div class="col">
+						Savitri Joshi
+						<a
+							href="https://profile.iiita.ac.in/savitri.joshi/Teaching.php"
+							target="_blank"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-link"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+								/>
+								<path
+									d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"
+								/></svg
+						></a>
+					</div>
+					<div class="col-2">LINK</div>
+				</div>
+				<div class="row">
+					<div class="col">Intro to Marketing</div>
+					<div class="col-2">
+						<a href="https://classroom.google.com/" target="_blank"
+							>IM</a
+						>
+					</div>
+					<div class="col">Saurabh Mishra</div>
+					<div class="col-2">
+						<a
+							href="https://iiita.webex.com/meet/saurabhmishra"
+							target="_blank"
+							>link</a
+						>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">Intro to Finance</div>
+					<div class="col-2">
+						<a
+							href="https://classroom.google.com/u/0/c/Mzc2Njk0NDUxODg1"
+							target="_blank"
+							>IF</a
+						>
+					</div>
+					<div class="col">Ranjit Singh</div>
+					<div class="col-2">
+						<a
+							href="https://meet.google.com/lookup/gbmgkmaunm?authuser=0&hs=179"
+							target="_blank"
+							>link</a
+						>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">Python Programming</div>
+					<div class="col-2">
+						<a href="https://classroom.google.com/" target="_blank"
+							>PTP</a
+						>
+					</div>
+					<div class="col">Padmakar Pandey</div>
+					<div class="col-2">
+						<a href="https://iiita.webex.com/meet/" target="_blank"
+							>link</a
+						>
+					</div>
+				</div>
+			</div>
 
+			<form id="form">
+				<section>
+					<label for="Aname">Assignment Title: </label>
+					<input type="text" id="Aname" name="Aname" /> <br />
+				</section>
+				<section>
+					<label for="sbj">Subject: </label>
+					<input type="text" id="sbj" name="sbj" /><br />
+				</section>
+				<section>
+					<label for="date">Due Date: </label>
+					<input type="date" id="date" name="dateyt" /><br />
+				</section>
+				<section>
+					<label for="time">Due time: </label>
+					<input type="time" id="time" name="timeyt" /><br />
+				</section>
+				<input type="submit" value="Save" id="btnSave" />
+				<!-- <button>ADD</button> -->
+			</form>
+			<table id="tblList"></table>
 
-        <div class="container-fluid" style="text-align: center;">
-            <div class="row heading" id="heading">
-                <div class="col"> <b>SUBJECT</b></div>
-                <div class="col-2"><b>CODE</b></div>
-                <div class="col"> <b>FACULTY</b> </div>
-                <div class="col-2"><b>CLASS LINKS</b></div>
-            </div>
-            <div class="row ">
-                <div class="col">Object Oriented Methodologies</div>
-                <div class="col-2"><a href="https://classroom.google.com/u/0/c/MzcxNzgxNDUxOTY1" target="_blank"> OOM</a></div>
-                <div class="col">O.P.Vyas</div>
-                <div class="col-2"><a href="https://iiita.webex.com/iiita/j.php?MTID=mfa5df8bfbe48d4fd53a22ad35bdac8f7" target="_blank">link</a> :oom123</div>
-            </div>
-            <div class="row ">
-                <div class="col">Theory of Computation</div>
-                <div class="col-2"><a href="https://classroom.google.com/u/0/c/MzcyMjQ5MjgxOTkw" target="_blank">TOC</a></div>
-                <div class="col">Navjot Singh</div>
-                <div class="col-2"><a href="https://iiita.webex.com/iiita/j.php?MTID=m09696073470ad53a9bc166f7344fc70d" target="_blank">link</a></div>
-            </div>
-            <div class="row ">
-                <div class="col">Opearting System</div>
-                <div class="col-2"><a href="https://classroom.google.com/u/0/c/MzcyNTYxMTY3ODk3" target="_blank">OS</a></div>
-                <div class="col"> Bibhal Ghoshal<a href="https://profile.iiita.ac.in/bibhas.ghoshal/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                        <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-                        <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-                      </svg></a></div>
-                <div class="col-2"><a href="https://iiita.webex.com/iiita/j.php?MTID=m30c097cd1ec5a9e43391e11caf71b949" target="_blank">link</a> 
-                <!-- <a href="https://meet.google.com/rdh-yjid-ivx" target="_blank">gc link</a> -->
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col">Probability and Statistics</div>
-                <div class="col-2"><a href="https://classroom.google.com/u/0/c/MzcyMTM0MTY4NTUz" target="_blank">PAS</a></div>
-                <div class="col">Savitri Joshi <a href="https://profile.iiita.ac.in/savitri.joshi/Teaching.php" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                    <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-                    <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
-                  </svg></a></div>
-                <div class="col-2">LINK</div>
-            </div>
-            <div class="row ">
-                <div class="col">Intro to Marketing</div>
-                <div class="col-2"><a href="https://classroom.google.com/" target="_blank">IM</a></div>
-                <div class="col">Saurabh Mishra</div>
-                <div class="col-2"><a href="https://iiita.webex.com/meet/saurabhmishra" target="_blank">link</a></div>
-            </div>
-            <div class="row ">
-                <div class="col">Intro to Finance</div>
-                <div class="col-2"><a href="https://classroom.google.com/u/0/c/Mzc2Njk0NDUxODg1" target="_blank">IF</a></div>
-                <div class="col">Ranjit Singh</div>
-                <div class="col-2"><a href="https://meet.google.com/lookup/gbmgkmaunm?authuser=0&hs=179" target="_blank">link</a></div>
-            </div>
-            <div class="row ">
-                <div class="col">Python Programming</div>
-                <div class="col-2"><a href="https://classroom.google.com/" target="_blank">PTP</a></div>
-                <div class="col">Padmakar Pandey</div>
-                <div class="col-2"><a href="https://iiita.webex.com/meet/" target="_blank">link</a></div>
-            </div>
-        </div>
+			<div class="container">
+				<p id="notif">The Assignments due are:</p>
+				<ul id="list"></ul>
+			</div>
 
-        <form >
-            <section>
-                <label for="Aname">Assignment: </label>
-                <input type="text" id="Aname" name="Aname"> <br>
-            </section>
-            <section>
-                <label for="sbj">Subject:    </label>
-                <input type="text" id="sbj" name="sbj"><br>
-            </section>
-            <section>
-                <label for="date">DUE Date: </label>
-                <input type="date" id="date" name="dateyt"><br>
-            </section>
-            
-            <button>ADD</button>
-        </form>
+			<img src="image/Timetable1.jpg" alt="timetable" class="img-fluid" />
+		</div>
 
-        
+		<footer>
+			<div class="container" style="text-align: center">
+				<!-- <p>Your valuable suggestions are welcome <i class="fas fa-praying-hands"></i></p> -->
+				<p>Made with <i class="fa fa-heart"></i></p>
+			</div>
+		</footer>
 
-        <div class="container">
-            <p id="notif">The Assignments due are: </p>
-            <ul id="list"></ul>
-        </div>
-        
-
-        <img src="image/Timetable1.jpg" alt="timetable" class="img-fluid">
-
-
-    </div>
-
-
-    <footer>
-        <div class="container" style="text-align: center;">
-            <!-- <p>Your valuable suggestions are welcome <i class="fas fa-praying-hands"></i></p> -->
-            <p>Made with <i class="fa fa-heart"></i></p>
-        </div>
-
-    </footer>
-
-    <script src="js/app.js"></script>
-
-</body>
+		<script src="js/app.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
-
-<!-- <li><a class="dropdown-item" href="/music">Music activities</li> -->
-                        <!-- <li><a class="dropdown-item" href="/container">Containing activities</li> -->
-                      <!-- <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
