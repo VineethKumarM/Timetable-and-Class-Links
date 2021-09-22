@@ -13,26 +13,31 @@ Assignment Object:
 */
 function add(event) {
 	event.preventDefault();
-	if (localStorage.getItem("assigns")) {
-		assign = JSON.parse(localStorage.getItem("assigns"));
-	}
+
 	if (!document.getElementById("Aname").value) {
-		List();
+		// List();
 		return;
 	}
+
 	let work = {
 		Aname: document.getElementById("Aname").value,
 		sbj: document.getElementById("sbj").value,
 		date: document.getElementById("date").value,
 		time: document.getElementById("time").value,
 	};
+	if (localStorage.getItem("assigns")) {
+		assign = JSON.parse(localStorage.getItem("assigns"));
+	}
 
 	assign.push(work);
 	form.reset();
 	// const workString = JSON.stringify(work);
 
 	localStorage.setItem("assigns", JSON.stringify(assign));
-	List();
+	// if (document.querySelectorAll("li")) {
+	// 	document.querySelectorAll("li").remove();
+	// }
+	// List();
 }
 
 function List() {
@@ -42,11 +47,18 @@ function List() {
 		var cli = assign[i];
 
 		const item = document.createElement("li");
-		item.innerText = `${cli.Aname} ${cli.sbj} Due on ${cli.date}`;
+		const btn = document.createElement("button");
+		btn.innerText = "edit";
+		btn.setAttribute("style", "display: inline");
+		item.innerHTML = `${cli.sbj} ${cli.Aname}  Due on ${cli.date} at ${cli.time}`;
+		item.setAttribute("onclick");
+		// item = item.insertAdjacentElement(btn);
 		list.appendChild(item);
+		// list.insertAdjacentElement(btn);
 	}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
 	form.addEventListener("submit", add);
+	List();
 });
