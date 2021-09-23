@@ -3,6 +3,9 @@ var form = document.getElementById("form");
 const list = document.querySelector("#list");
 const show = document.querySelector("#show");
 let assign = [];
+if (!localStorage.assigns) {
+	localStorage.setItem("assigns", JSON.stringify([]));
+}
 /*
 Assignment Object: 
     {
@@ -12,6 +15,7 @@ Assignment Object:
       "time":,
     }
 */
+
 function add(event) {
 	event.preventDefault();
 	//1
@@ -27,17 +31,14 @@ function add(event) {
 		date: document.getElementById("date").value,
 		time: document.getElementById("time").value,
 	};
-	if (localStorage.getItem("assigns")) {
-		assign = JSON.parse(localStorage.getItem("assigns"));
-	}
 
 	assign.push(work);
-
 	localStorage.setItem("assigns", JSON.stringify(assign));
-
 	form.reset();
 	console.log("added");
 	location.reload();
+	// }
+
 	// List();
 }
 
