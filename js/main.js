@@ -1,3 +1,19 @@
+if (!localStorage.assigns) {
+	alert("Assignments form is working!");
+}
+document.addEventListener("DOMContentLoaded", function () {
+	window.addEventListener("scroll", function () {
+		if (window.scrollY > 50) {
+			document.getElementById("navbar").classList.add("fixed-top");
+			navbar_height = document.querySelector(".navbar").offsetHeight;
+			document.body.style.paddingTop = navbar_height + "px";
+		} else {
+			document.getElementById("navbar").classList.remove("fixed-top");
+			document.body.style.paddingTop = "0";
+		}
+	});
+});
+
 var htmlElem = document.querySelector("html");
 var form = document.getElementById("form");
 const list = document.querySelector("#list");
@@ -63,17 +79,18 @@ function List() {
 function List1() {
 	var count = localStorage.length;
 	if (count > 0) {
-		console.log(count);
+		// console.log(count);
 		// var key = localStorage.getItem(); //Get  the Key
 		assign = JSON.parse(localStorage.getItem("assigns"));
 		for (var i in assign) {
-			console.log(i);
+			// console.log(i);
 			var pre = "<pre>";
 			var work = assign[i];
 			// console.log(work);
 			pre += `${work.sbj} ${work.Aname}  Due on ${work.date} at ${work.time}`;
-			pre += `	<button ctr=${i} id="delete" onclick = "removeWork(${i})" > delete </button>`;
+			pre += `	<button ctr=${i} id="delete" class="btn btn-danger btn-sm" onclick = "removeWork(${i})" > Done </button>`;
 			// pre += `	<button ctr=${i} id="edit" onclick = "editWork(${i})" > edit </button>`;
+			pre += ` <span class="hide">click to delete</span>`;
 			const item = document.createElement("li");
 			item.innerHTML = pre;
 			list.appendChild(item);
@@ -106,7 +123,7 @@ function edit(work) {
 	document.getElementById("sbj").value = work.sbj;
 	document.getElementById("date").value = work.date;
 	document.getElementById("time").value = work.time;
-	console.log(1);
+	// console.log(1);
 	let edited = {
 		Aname: document.getElementById("Aname").value,
 		sbj: document.getElementById("sbj").value,

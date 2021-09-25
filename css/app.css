@@ -7,6 +7,11 @@ form {
 	margin-top: 10px;
 }
 
+pre {
+	font-family: inherit;
+	font-size: inherit;
+}
+
 .row:nth-of-type(even) {
 	color: #f7f7f7;
 	padding: 4px;
@@ -14,6 +19,14 @@ form {
 }
 .row:nth-of-type(odd) {
 	padding: 4px;
+}
+.hide {
+	display: none;
+}
+
+#delete:hover + .hide {
+	display: inline;
+	color: blue;
 }
 
 #table {
