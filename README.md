@@ -2,10 +2,9 @@
 
 A basic Webpage which has the Schedule and Links for the Classes(Sec-C)
 [ACIVE LINK OF THE PAGE](https://vineethkumarm.github.io/Timetable-and-Class-Links/)
-<a href="https://vineethkumarm.github.io/Timetable-and-Class-Links/" target="_blank">link</a>
 
-Few Classes don't have fixed links, so some links are not valid.
-Assignment section is still in progress! :/
+The lecture links are fixed except for PAS, and tutorials.
+Check the Assignments section, I hope it will be beneficial.
 
 <hr>
 Suggestions are welcome.

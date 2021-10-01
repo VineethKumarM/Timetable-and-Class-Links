@@ -38,6 +38,7 @@ function add(event) {
 
 	if (!document.getElementById("Aname").value) {
 		// List();
+		alert("Enter all fields");
 		return;
 	}
 
